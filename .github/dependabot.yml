@@ -1,0 +1,11 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/Winleafs.Wpf"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: NLog
+    versions:
+    - 4.7.9
